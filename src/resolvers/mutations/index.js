@@ -1,9 +1,10 @@
-const createPodcast = require("./createPodcast");
-const updatePodcast = require("./updatePodcast");
-const deletePodcast = require("./deletePodcast");
+//import folder js files
+const createNAMEHERE = require("./createNAMEHERE");
+const updateNAMEHERE = require("./updateNAMEHERE");
+const deleteNAMEHERE = require("./deleteNAMEHERE");
 
 module.exports = {
-  createPodcast,
-  updatePodcast,
-  deletePodcast
+    createNAMEHERE,
+    updateNAMEHERE,
+    deleteNAMEHERE
 }

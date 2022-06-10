@@ -1,14 +1,12 @@
-require("dotenv").config();
 const mongoose = require("mongoose");
 
-const DATABASE_URL = process.env.DATABASE_URL;
 
 const connectDb = () => {
-  return mongoose.connect(DATABASE_URL, { useUnifiedTopology: true, useNewUrlParser: true }, err => {
+  return mongoose.connect('mongodb://pablo:sickpass123@cluster0-shard-00-00.5plpr.mongodb.net:27017,cluster0-shard-00-01.5plpr.mongodb.net:27017,cluster0-shard-00-02.5plpr.mongodb.net:27017/?ssl=true&replicaSet=atlas-7j4atl-shard-0&authSource=admin&retryWrites=true&w=majority', { useUnifiedTopology: true, useNewUrlParser: true }, err => {
     if (err) {
       console.log("Connection to Database failed.");
     }
-    else{
+    else {
       console.log("Database connection successful.");
     }
   });

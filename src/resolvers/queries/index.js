@@ -1,5 +1,7 @@
-const podcasts = require("./podcasts");
+const NAMEHEREs = require("./NAMEHEREs");
+const NAMEHERE = require("./NAMEHERE");
 
 module.exports = {
-  podcasts
+  NAMEHEREs,
+  NAMEHERE
 }
